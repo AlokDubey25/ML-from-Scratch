@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: ml-from-scratch
+Version: 0.1.0
+Summary: A learning project implementing machine learning algorithms from scratch
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+# ML-from-Scratch
+
+it will be initial commit that what i'm planning to do in this project
+I will create some models or algos from scratch without using sklearn to understand coding behind the process as i recently completed nptel ml course so this will be best...
