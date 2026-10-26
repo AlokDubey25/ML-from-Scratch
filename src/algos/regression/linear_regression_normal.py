@@ -24,7 +24,7 @@ class LinearRegressionNormalEquation:
         return np.hstack([np.ones((X.shape[0], 1)), X])             # it prepend a column of ones for intercept term....
 
     def fit(self, X: np.ndarray, y: np.ndarray) -> "LinearRegressionNormalEquation":
-        X = np.ndarray(X, dtype=np.float64)             # Cm=omputing wt using normal eq
+        X = np.ndarray(X, dtype=np.float64)             # Computing wt using normal eq
         y = np.ndarray(y, dtype=np.float64)
 
         if self.fit_intercept:
