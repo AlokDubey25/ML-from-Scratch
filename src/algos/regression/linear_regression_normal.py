@@ -16,16 +16,16 @@ import numpy as np
 
 class LinearRegressionNormalEquation:
 
-    def __init__(self):
-        self.fit_intercept = self.fit_intercept
+    def __init__(self, fit_intercept: bool = True):
+        self.fit_intercept = fit_intercept
         self.weights_ = None
 
     def _add_bias(self, X: np.ndarray) -> np.ndarray:
         return np.hstack([np.ones((X.shape[0], 1)), X])             # it prepend a column of ones for intercept term....
 
     def fit(self, X: np.ndarray, y: np.ndarray) -> "LinearRegressionNormalEquation":
-        X = np.ndarray(X, dtype=np.float64)             # Computing wt using normal eq
-        y = np.ndarray(y, dtype=np.float64)
+        X = np.array(X, dtype=np.float64)             # Computing wt using normal eq
+        y = np.array(y, dtype=np.float64)
 
         if self.fit_intercept:
             X = self._add_bias(X)

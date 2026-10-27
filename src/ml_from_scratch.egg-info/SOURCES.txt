@@ -1,7 +1,13 @@
 README.md
 pyproject.toml
+src/algos/regression/linear_regression_normal.py
 src/ml_from_scratch.egg-info/PKG-INFO
 src/ml_from_scratch.egg-info/SOURCES.txt
 src/ml_from_scratch.egg-info/dependency_links.txt
 src/ml_from_scratch.egg-info/requires.txt
 src/ml_from_scratch.egg-info/top_level.txt
+src/utils/activations.py
+src/utils/distances.py
+src/utils/losses.py
+src/utils/metrics.py
+src/utils/preprocessing.py

@@ -2,7 +2,7 @@ import numpy as np
 import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "..", ".."))
 
-from linear_regression_normal import LinearRegressionNormalEquation
+from algos.regression.linear_regression_normal import LinearRegressionNormalEquation
 
 def main():
     print("=" * 55)
