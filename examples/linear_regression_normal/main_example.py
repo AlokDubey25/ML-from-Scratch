@@ -56,5 +56,4 @@ def main():
         print("\n       (sklearn not installed  -  skipping comparison)")
 
 
-if __name__ == "__main__":
-    main()
+if __name__ == "__main__"
