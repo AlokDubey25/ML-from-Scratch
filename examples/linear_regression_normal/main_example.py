@@ -39,6 +39,22 @@ def main():
     print(f"        Test R2:        {r2:.4f}")
 
 
+    # NOW COMPARE WITH OTHER ONE LIKE ORIGINAL ONE
+    try:
+        from sklearn.linear_model import LinearRegression as SKlearnLR
+        sk_model = SKlearnLR()
+        sk_model.fit(X_train, y_train)
+        sk_pred = sk_model.predict(X_test)
+        sk_mse = np.mean((y_test - sk_pred) ** 2)
+
+        print(f"\n      [sklearn] intercept : {sk_model.intercept_:.4f}, "
+                 f"slope: {sk_model.coef_[0]:.4f},  MSE: {sk_mse:.4f}")
+
+        print("     RESULT MATCH SKLearn...!!")
+
+    except ImportError:
+        print("\n       (sklearn not installed  -  skipping comparison)")
+
 
 if __name__ == "__main__":
     main()
