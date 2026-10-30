@@ -1,5 +1,7 @@
 README.md
 pyproject.toml
+src/algos/regression/lasso.py
+src/algos/regression/linear_regression_gradient.py
 src/algos/regression/linear_regression_normal.py
 src/ml_from_scratch.egg-info/PKG-INFO
 src/ml_from_scratch.egg-info/SOURCES.txt
